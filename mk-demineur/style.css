@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.jeu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+#container{
+    width: 300px;
+    height: 300px;
+    background-color: #04eef7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: auto; */
+    border: 0.2px solid #04eef7;
+
+    .cell{
+        display: flex;
+        width: 10%;
+        height: 10%;
+        background-color: bisque;
+        border: 0.2px solid #04eef7;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        user-select: none;
+        transition: all 0.5s;
+    }
+
+    .cell.reveal{
+        color: initial;
+    }
+}
+
+.disable{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+#decompteur{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    a, button{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: orange;
+        border-radius: 80px;
+        padding: 0.5rem;
+        border: 1px solid black;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    a, button{
+        width: 30% !important;
+    }
+}

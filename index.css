@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-bottom: 40px; */
+}
+
+#rules{
+    text-align: center;
+    font-weight: bolder;
+    width: 50%;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: orange;
+    border-radius: 80px;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    a{
+        width: 30% !important;
+    }
+}

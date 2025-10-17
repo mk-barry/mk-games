@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.jeu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+#container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .cell{
+        display: flex;
+        width: 30%;
+        height: 30%;
+        font-size: 1.5rem;
+        background-color: bisque;
+        border: 0.2px solid #04eef7;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        transition: all 0.5s;
+    }
+}
+
+.disable{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+#options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    a, button{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: orange;
+        border-radius: 80px;
+        padding: 0.5rem;
+        border: 1px solid black;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    a, button{
+        width: 30% !important;
+    }
+}
