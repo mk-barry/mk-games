@@ -61,8 +61,9 @@ body{
 
 @media screen and (max-width: 768px) {
     a, button{
-        width: 30% !important;
+        width: 50% !important;
         font-size: 0.8rem !important;
     }
 
 }
+
